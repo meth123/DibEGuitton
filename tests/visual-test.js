@@ -5,8 +5,7 @@ const { spawn } = require('node:child_process');
 function loadPlaywright() {
   const candidates = [
     'playwright',
-    process.env.NODE_PATH && path.join(process.env.NODE_PATH, 'playwright'),
-    'C:/Users/Mateus/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright'
+    process.env.NODE_PATH && path.join(process.env.NODE_PATH, 'playwright')
   ].filter(Boolean);
 
   for (const candidate of candidates) {
