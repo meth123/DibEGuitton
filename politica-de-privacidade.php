@@ -45,22 +45,12 @@ require __DIR__ . '/partials/header.php';
       <h2>7. Segurança e atualizações</h2>
       <p>Adotamos medidas proporcionais para reduzir riscos de acesso não autorizado, perda ou uso indevido. Esta política poderá ser atualizada para refletir mudanças no site, nos serviços utilizados ou na legislação; a data da versão mais recente ficará indicada no início da página.</p>
 
-      <aside class="share-card" aria-labelledby="share-title" data-share-card>
-        <div>
-          <p class="eyebrow">Transparência também se compartilha</p>
-          <h3 id="share-title">Envie nossa política</h3>
-          <p>Compartilhe esta página com quem quiser conhecer nossos cuidados com privacidade.</p>
-        </div>
-        <div class="share-actions" aria-label="Opções de compartilhamento">
-          <a href="#" data-share="whatsapp" target="_blank" rel="noopener">WhatsApp</a>
-          <a href="#" data-share="facebook" target="_blank" rel="noopener">Facebook</a>
-          <a href="#" data-share="x" target="_blank" rel="noopener">X</a>
-          <a href="#" data-share="linkedin" target="_blank" rel="noopener">LinkedIn</a>
-          <button type="button" data-share="native">Compartilhar</button>
-          <button type="button" data-share="copy">Copiar link</button>
-        </div>
-        <p class="share-status" data-share-status aria-live="polite"></p>
-      </aside>
+      <?php
+      $shareEyebrow = 'Transparência também se compartilha';
+      $shareTitle = 'Envie nossa política';
+      $shareDescription = 'Compartilhe esta página com quem quiser conhecer nossos cuidados com privacidade.';
+      require __DIR__ . '/partials/share-card.php';
+      ?>
     </article>
   </section>
 </main>

@@ -36,22 +36,7 @@ require __DIR__ . '/partials/header.php';
       <?= $area['content'] ?>
       <a class="button button-outline" href="https://calendly.com/fabio-dib/30min" data-calendly-popup>Agendar uma conversa</a>
 
-      <aside class="share-card" aria-labelledby="share-title" data-share-card>
-        <div>
-          <p class="eyebrow">Compartilhe conhecimento</p>
-          <h3 id="share-title">Este conteúdo pode ajudar alguém?</h3>
-          <p>Envie esta página para quem também busca decisões mais seguras.</p>
-        </div>
-        <div class="share-actions" aria-label="Opções de compartilhamento">
-          <a href="#" data-share="whatsapp" target="_blank" rel="noopener">WhatsApp</a>
-          <a href="#" data-share="facebook" target="_blank" rel="noopener">Facebook</a>
-          <a href="#" data-share="x" target="_blank" rel="noopener">X</a>
-          <a href="#" data-share="linkedin" target="_blank" rel="noopener">LinkedIn</a>
-          <button type="button" data-share="native">Compartilhar</button>
-          <button type="button" data-share="copy">Copiar link</button>
-        </div>
-        <p class="share-status" data-share-status aria-live="polite"></p>
-      </aside>
+      <?php require __DIR__ . '/partials/share-card.php'; ?>
     </article>
   </section>
 </main>

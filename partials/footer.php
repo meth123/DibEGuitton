@@ -17,7 +17,7 @@
       <a href="politica-de-privacidade.php">Entenda nossa Política de Privacidade</a>
     </div>
     <div class="cookie-actions">
-      <button class="button button-outline" type="button" data-cookie-essential>Somente essenciais</button>
+      <button class="button cookie-essential-button" type="button" data-cookie-essential aria-label="Usar somente recursos essenciais"><span>Somente essenciais</span></button>
       <button class="button" type="button" data-cookie-accept>Aceitar recursos</button>
     </div>
   </section>
