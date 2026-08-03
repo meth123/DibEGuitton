@@ -1,0 +1,20 @@
+# Arquivos do sistema e editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Configurações locais e segredos
+.env
+.env.*
+!.env.example
+
+# Logs, dependências e artefatos temporários
+*.log
+node_modules/
+vendor/
+coverage/
+.cache/
+tmp/
+tests/screenshots/
+tests/results.json
