@@ -3,6 +3,9 @@ $pageTitle = $pageTitle ?? 'Dib & Guitton | Inteligência Jurídica';
 $pageDescription = $pageDescription ?? 'Atuação jurídica estratégica, preventiva e integrada para proteger patrimônio, negócios e pessoas.';
 $bodyClass = $bodyClass ?? '';
 $currentPage = basename($_SERVER['PHP_SELF'] ?? 'index.php');
+$canonicalUrl = $canonicalUrl ?? 'https://dibeguitton.com.br/' . ($currentPage === 'index.php' ? '' : $currentPage);
+$socialImage = $socialImage ?? 'https://dibeguitton.com.br/assets/images/social-share.png';
+$ogType = $ogType ?? (strpos($bodyClass, 'area-page') !== false ? 'article' : 'website');
 ?>
 <!doctype html>
 <html lang="pt-BR">
@@ -12,11 +15,23 @@ $currentPage = basename($_SERVER['PHP_SELF'] ?? 'index.php');
   <meta name="description" content="<?= htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8') ?>">
   <meta name="theme-color" content="#0d513d">
   <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="<?= htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8') ?>">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="<?= htmlspecialchars($ogType, ENT_QUOTES, 'UTF-8') ?>">
+  <meta property="og:site_name" content="Dib &amp; Guitton">
+  <meta property="og:title" content="<?= htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') ?>">
+  <meta property="og:description" content="<?= htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8') ?>">
+  <meta property="og:url" content="<?= htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8') ?>">
+  <meta property="og:image" content="<?= htmlspecialchars($socialImage, ENT_QUOTES, 'UTF-8') ?>">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Dib &amp; Guitton — Inteligência Jurídica e Gestão Patrimonial">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="<?= htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') ?>">
+  <meta name="twitter:description" content="<?= htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8') ?>">
+  <meta name="twitter:image" content="<?= htmlspecialchars($socialImage, ENT_QUOTES, 'UTF-8') ?>">
   <title><?= htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') ?></title>
-  <link rel="icon" type="image/png" href="assets/images/logo-dg.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/favicon-white.png">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/site.js" defer></script>
 </head>

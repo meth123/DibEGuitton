@@ -15,15 +15,17 @@ $area = $areas[$areaSlug];
 $pageTitle = $area['title'] . ' | Dib & Guitton';
 $pageDescription = $area['headline'] . '. Atuação jurídica estratégica do Dib & Guitton.';
 $bodyClass = 'area-page area-' . $areaSlug;
+$canonicalUrl = 'https://dibeguitton.com.br/' . $areaSlug . '.php';
+$ogType = 'article';
 require __DIR__ . '/partials/header.php';
 ?>
 <main id="conteudo">
   <section class="area-hero" style="background-image: url('assets/images/<?= htmlspecialchars($area['image'], ENT_QUOTES, 'UTF-8') ?>')">
     <div class="container hero-content">
-      <p class="eyebrow">Dib &amp; Guitton</p>
-      <h1>Inteligência Jurídica para Converter Obstáculos em <span class="accent">Ativos Estratégicos</span></h1>
-      <p>Atuação jurídica integrada em planejamento sucessório, direito imobiliário, empresarial, público, ambiental e urbanístico, com foco em prevenção de riscos, segurança jurídica e resultados concretos.</p>
-      <a class="button" href="https://calendly.com/fabio-dib/30min" target="_blank" rel="noopener">Agendar Consulta</a>
+      <p class="eyebrow"><?= htmlspecialchars($area['title'], ENT_QUOTES, 'UTF-8') ?></p>
+      <h1><?= htmlspecialchars($area['heroLead'], ENT_QUOTES, 'UTF-8') ?> <span class="accent"><?= htmlspecialchars($area['heroAccent'], ENT_QUOTES, 'UTF-8') ?></span></h1>
+      <p><?= htmlspecialchars($area['heroDescription'], ENT_QUOTES, 'UTF-8') ?></p>
+      <a class="button" href="https://calendly.com/fabio-dib/30min" data-calendly-popup>Agendar Consulta</a>
     </div>
   </section>
 
@@ -32,7 +34,24 @@ require __DIR__ . '/partials/header.php';
       <p class="eyebrow"><?= htmlspecialchars($area['title'], ENT_QUOTES, 'UTF-8') ?></p>
       <h2><?= htmlspecialchars($area['headline'], ENT_QUOTES, 'UTF-8') ?></h2>
       <?= $area['content'] ?>
-      <a class="button button-outline" href="https://calendly.com/fabio-dib/30min" target="_blank" rel="noopener">Agendar uma conversa</a>
+      <a class="button button-outline" href="https://calendly.com/fabio-dib/30min" data-calendly-popup>Agendar uma conversa</a>
+
+      <aside class="share-card" aria-labelledby="share-title" data-share-card>
+        <div>
+          <p class="eyebrow">Compartilhe conhecimento</p>
+          <h3 id="share-title">Este conteúdo pode ajudar alguém?</h3>
+          <p>Envie esta página para quem também busca decisões mais seguras.</p>
+        </div>
+        <div class="share-actions" aria-label="Opções de compartilhamento">
+          <a href="#" data-share="whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="#" data-share="facebook" target="_blank" rel="noopener">Facebook</a>
+          <a href="#" data-share="x" target="_blank" rel="noopener">X</a>
+          <a href="#" data-share="linkedin" target="_blank" rel="noopener">LinkedIn</a>
+          <button type="button" data-share="native">Compartilhar</button>
+          <button type="button" data-share="copy">Copiar link</button>
+        </div>
+        <p class="share-status" data-share-status aria-live="polite"></p>
+      </aside>
     </article>
   </section>
 </main>
