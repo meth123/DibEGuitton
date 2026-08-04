@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/cont9323/dibeguitton.com.br/
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/cp -R assets data partials $DEPLOYPATH
+    - /bin/cp .htaccess index.php area.php agronegocio.php ambiental.php contratos-com-inteligencia-juridica.php direito-a-saude.php empresarial.php imobiliario.php planejamento-sucessorio.php politica-de-privacidade.php relacoes-de-consumo.php urbanistico.php $DEPLOYPATH
