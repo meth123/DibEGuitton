@@ -1,6 +1,6 @@
 <?php
-$pageTitle = 'Dib & Guitton | Inteligência Jurídica e Gestão Patrimonial';
-$pageDescription = 'Advocacia estratégica e preventiva em planejamento sucessório, agronegócio, imobiliário, empresarial, ambiental, urbanístico, consumo e saúde.';
+$pageTitle = 'Dib & Guitton | Inteligência Jurídica e Patrimonial';
+$pageDescription = 'Advocacia estratégica para proteger patrimônio, negócios e pessoas com soluções preventivas, seguras e sustentáveis.';
 $bodyClass = 'home-page';
 require __DIR__ . '/partials/header.php';
 

@@ -4,7 +4,7 @@ $pageDescription = $pageDescription ?? 'Atuação jurídica estratégica, preven
 $bodyClass = $bodyClass ?? '';
 $currentPage = basename($_SERVER['PHP_SELF'] ?? 'index.php');
 $canonicalUrl = $canonicalUrl ?? 'https://dibeguitton.com.br/' . ($currentPage === 'index.php' ? '' : $currentPage);
-$socialImage = $socialImage ?? 'https://dibeguitton.com.br/assets/images/social-share.png';
+$socialImage = $socialImage ?? 'https://dibeguitton.com.br/assets/images/social-share-v2.jpg';
 $ogType = $ogType ?? (strpos($bodyClass, 'area-page') !== false ? 'article' : 'website');
 ?>
 <!doctype html>
@@ -23,13 +23,16 @@ $ogType = $ogType ?? (strpos($bodyClass, 'area-page') !== false ? 'article' : 'w
   <meta property="og:description" content="<?= htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8') ?>">
   <meta property="og:url" content="<?= htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8') ?>">
   <meta property="og:image" content="<?= htmlspecialchars($socialImage, ENT_QUOTES, 'UTF-8') ?>">
+  <meta property="og:image:secure_url" content="<?= htmlspecialchars($socialImage, ENT_QUOTES, 'UTF-8') ?>">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Dib &amp; Guitton — Inteligência Jurídica e Gestão Patrimonial">
+  <meta property="og:image:alt" content="Dib &amp; Guitton — Inteligência Jurídica e Gestão Patrimonial. Conheça nossas soluções.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="<?= htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') ?>">
   <meta name="twitter:description" content="<?= htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8') ?>">
   <meta name="twitter:image" content="<?= htmlspecialchars($socialImage, ENT_QUOTES, 'UTF-8') ?>">
+  <meta name="twitter:image:alt" content="Dib &amp; Guitton — Inteligência Jurídica e Gestão Patrimonial. Conheça nossas soluções.">
   <title><?= htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') ?></title>
   <link rel="icon" type="image/png" href="assets/images/favicon-white.png">
   <link rel="stylesheet" href="assets/css/styles.css">

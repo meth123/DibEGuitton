@@ -22,7 +22,7 @@ function loadPlaywright() {
 const { chromium } = loadPlaywright();
 
 const pages = [
-  ['home', '/index.php', 'Dib & Guitton | Inteligência Jurídica e Gestão Patrimonial', false, true],
+  ['home', '/index.php', 'Dib & Guitton | Inteligência Jurídica e Patrimonial', false, true],
   ['planejamento-sucessorio', '/planejamento-sucessorio.php', 'Planejamento Sucessório | Dib & Guitton', true, true],
   ['agronegocio', '/agronegocio.php', 'Agronegócio | Dib & Guitton', true, true],
   ['imobiliario', '/imobiliario.php', 'Imobiliário | Dib & Guitton', true, true],
@@ -140,7 +140,7 @@ async function loadLazyImages(page) {
             .every((name) => document.querySelector(`[data-share="${name}"]`)),
           cookieBanner: Boolean(document.querySelector('[data-cookie-banner]')),
           privacyLink: Boolean(document.querySelector('a[href="politica-de-privacidade.php"]')),
-          socialMeta: document.querySelector('meta[property="og:image"]')?.content.endsWith('/assets/images/social-share.png') &&
+          socialMeta: document.querySelector('meta[property="og:image"]')?.content.endsWith('/assets/images/social-share-v2.jpg') &&
             document.querySelector('meta[name="twitter:card"]')?.content === 'summary_large_image' &&
             Boolean(document.querySelector('link[rel="canonical"]')?.href),
           optionalResourcesBlocked: !document.querySelector('#dg-google-fonts') &&
