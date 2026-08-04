@@ -284,7 +284,7 @@ h3 { font-size: 20px; }
   .article-shell p, .article-shell li { font-size: 16px; }
   .share-card { margin-top: 45px; padding: 26px 22px; }
   .share-card .eyebrow { margin-bottom: 10px; }
-  .share-actions { display: grid; grid-template-columns: repeat(3, 48px); gap: 13px; justify-content: start; }
+  .share-actions { display: grid; grid-template-columns: repeat(3, 48px); gap: 13px; justify-content: center; }
   .share-actions a, .share-actions button { flex: 0 0 48px; }
   .legal-hero { min-height: 430px; padding: 145px 0 70px; }
   .legal-hero-content > p:not(.eyebrow) { font-size: 16px; }
