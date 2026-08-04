@@ -11,7 +11,7 @@ $shareDescription = $shareDescription ?? 'Envie esta página para quem também b
   </div>
   <div class="share-actions" aria-label="Opções de compartilhamento">
     <a href="#" data-share="whatsapp" target="_blank" rel="noopener" aria-label="Compartilhar no WhatsApp" title="WhatsApp">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.4-4.9a8.4 8.4 0 1 1 16.1-3.9Z"/><path d="M8.1 7.5c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.5l.8 2c.1.3 0 .5-.2.8l-.6.7c-.2.2-.1.4 0 .6.6 1 1.5 1.9 2.6 2.5.3.2.5.1.7-.1l.8-1c.2-.3.5-.3.8-.2l1.9.9c.3.2.5.3.5.5 0 .3-.2 1.5-1 2.1-.7.7-1.7 1-2.8.7-1.1-.3-2.6-.9-4.3-2.4-2-1.8-3.2-4-3.3-5.4 0-.7.2-1.3.4-1.8Z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.5L3 20.6l1.3-4.8a8.5 8.5 0 1 1 16.2-4Z"/><path d="M8.2 7.7c.3-.4.8-.4 1.1 0l1.2 1.9c.2.3.1.7-.1 1l-.8.8c.9 1.8 2.2 3.1 4 4l.8-.8c.3-.3.7-.3 1-.1l1.9 1.2c.4.3.4.8 0 1.1-.7.6-1.5.9-2.4.8-4.5-.5-8-4-8.5-8.5-.1-.9.2-1.7.8-2.4Z"/></svg>
       <span class="visually-hidden">WhatsApp</span>
     </a>
     <a href="#" data-share="facebook" target="_blank" rel="noopener" aria-label="Compartilhar no Facebook" title="Facebook">
