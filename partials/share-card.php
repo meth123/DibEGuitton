@@ -11,7 +11,7 @@ $shareDescription = $shareDescription ?? 'Envie esta página para quem também b
   </div>
   <div class="share-actions" aria-label="Opções de compartilhamento">
     <a href="#" data-share="whatsapp" target="_blank" rel="noopener" aria-label="Compartilhar no WhatsApp" title="WhatsApp">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.5L3 20.6l1.3-4.8a8.5 8.5 0 1 1 16.2-4Z"/><path d="M8.2 7.7c.3-.4.8-.4 1.1 0l1.2 1.9c.2.3.1.7-.1 1l-.8.8c.9 1.8 2.2 3.1 4 4l.8-.8c.3-.3.7-.3 1-.1l1.9 1.2c.4.3.4.8 0 1.1-.7.6-1.5.9-2.4.8-4.5-.5-8-4-8.5-8.5-.1-.9.2-1.7.8-2.4Z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.84 9.84 0 0 0-8.36 15.04L2.05 22l5.08-1.49A9.9 9.9 0 1 0 12 2Zm5.78 13.9c-.24.67-1.4 1.28-1.93 1.35-.5.07-1.13.1-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.18-4.94-4.37-.14-.19-1.18-1.57-1.18-3 0-1.43.75-2.13 1.02-2.42.24-.26.52-.33.7-.33h.5c.16 0 .38-.06.59.45.22.53.75 1.83.82 1.96.07.14.11.3.02.48-.09.19-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.52 1.9 1.04.93 1.92 1.22 2.19 1.36.27.14.43.12.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.23.61-.14.25.09 1.59.75 1.86.89.27.14.45.2.52.32.07.11.07.66-.17 1.33Z"/></svg>
       <span class="visually-hidden">WhatsApp</span>
     </a>
     <a href="#" data-share="facebook" target="_blank" rel="noopener" aria-label="Compartilhar no Facebook" title="Facebook">
